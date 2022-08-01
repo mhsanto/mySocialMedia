@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- iconscout cdn -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <title>Social Media Demo</title>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <!-- <h1 class="logo">Santo</h1> -->
+            <a href="index.html" class="logo">Santo</a>
+            <div class="search-box">
+               
+                <i class="uil uil-search-alt"></i>
+                <input type="search" placeholder="Enter your search">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary bounce-top " for="create_post">Create</label>
+                <div class="profile-picture">
+                    <img src="images/santo.jpg" alt="profile-photo">
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!---------Main----------->
+    <main>
+        <div class="container">
+            <!-- --------left----------->
+            <div class="left">
+                <a class="profile">
+                    <div class="profile-picture">
+                        <img src="images/santo.jpg" alt="profile picture">
+                    </div>
+                    <div class="handle">
+                        <h4>Mahmodul Hasan</h4>
+                        <p class="text-muted">@mhsanto92</p>
+                    </div>
+                </a>
+                <!-- --------Sidebar----------->
+                <div class="sidebar">
+                    <div class="menu" id="here">
+                        <abbr title="Home"><a href="#stories" class="menu-item active">
+                                <span><i class="uil uil-home"></i></span>
+                                <h3>Home</h3>
+                            </a></abbr>
+                        <abbr title="Explore"> <a class="menu-item">
+                                <span><i class="uil uil-compass"></i></span>
+                                <h3>Explore</h3>
+
+                            </a></abbr>
+                      <!--- <abbr title="Notifications">--><a class="menu-item" id="notifications">
+                                <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span>
+                                <h3>Notifications</h3>
+                                <!-- ==========NOtification PopUp========= -->
+                                <div class="notification-popup">
+                                    <div class="notification-hover">
+                                        <div class="profile-picture">
+                                            <img src="images/Sujon.jpg" alt="Sujon's profile picture">
+                                        </div>
+                                        <div class="notification-body">
+                                            <b>MD Sujon</b><span class="right-now1"> sent you a friend request.</span>
+                                            <h5>right now</h5>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="profile-picture">
+                                            <img src="images/Sazzad.jpg" alt="Sazzad profile picture">
+                                        </div>
+                                        <div class="notification-body">
+                                            <b>Sazzad Hossain</b> accept your friend request <h5 class="text-muted">
+                                                2days ago</h5>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="profile-picture">
+                                            <img src="images/sabbir.jpg" alt="Sabbir profile picture">
+                                        </div>
+                                        <div class="notification-body">
+                                            <b>Sabbir Hossain</b> added a new photo.
+                                            <h5 class="text-muted">1week ago</h5>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="profile-picture">
+                                            <img src="images/sajjadul_Islam.jpg" alt="Sajjdul Islam profile picture">
+                                        </div>
+                                        <div class="notification-body">
+                                            <b>Sajjadul Islam </b> mentioned you in a post.
+                                            <h5 class="text-muted">5hours ago</h5>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="profile-picture">
+                                            <img src="images/shojib.jpg" alt="Shojib profile picture">
+                                        </div>
+                                        <div class="notification-body">
+                                            <b>Ariful Haque shojib </b>added you in a group.
+                                            <h5 class="text-muted">1hour ago</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        <!-- ============End of Notification Popup========== -->
+
+                         <a class="menu-item" id="messages-notification">
+                                <span><i class="uil uil-comment-alt-message"><small
+                                            class="notification-count">3</small></i></span>
+                                <h3>Messages</h3>
+                            </a></abbr>
+                       <abbr title="Recent Post"><a href="#create_post"  class="menu-item">
+                                <span><i class="uil uil-chart-line"></i></span>
+                                <h3>Recent Post</h3>
+                            </a></abbr>
+                        <abbr title="Themes"> <a class="menu-item" <span><i class="uil uil-palette"></i></span>
+                                <h3>Themes</h3>
+                            </a></abbr>
+                        <abbr title="Settings"> <a class="menu-item">
+                                <span><i class="uil uil-setting"></i></span>
+                                <h3>Settings</h3>
+                            </a>
+                    </div>
+                </div>
+                <!-- ===========End Sidebar========== -->
+                <label for="create_post" class="btn btn-primary bounce-top">Create Post</label>
+
+            </div>
+            <!-- ================End Of Left side========= -->
+            <!-- --------middle part------- -->
+            <div class="middle">
+                <!-- =================Start Of stories============= -->
+                <div class="stories" id="stories">
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="images/santo.jpg" alt="">
+                        </div>
+                        <p class="name">Your story</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="images/sabbir.jpg" alt="">
+                        </div>
+                        <p class="name">Sabbir Hossain</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="images/sajjadul_Islam.jpg" alt="">
+                        </div>
+                        <p class="name">Sajjadul Islam</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="images/Sayed.jpg" alt="">
+                        </div>
+                        <p class="name">Abu Sayed</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="images/AkonProfile.jpg" alt="">
+                        </div>
+                        <p class="name">Masum Muzammel Akon</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="images/shojib.jpg" alt="">
+                        </div>
+                        <p class="name">Ariful Haque Shojib</p>
+                    </div>
+                </div>
+                <!-- ============END OF STORIES=========== -->
+                <form class="create_post" id="create_post">
+                    <div class="profile-picture">
+                        <img src="images/santo.jpg" alt="Profile_photo">
+                    </div>
+                    <input type="text" name="Text" id="create_post" placeholder="What's on your mind,Santo">
+                    <input type="submit" value="Post" class="btn btn-primary bounce-top">
+                </form>
+
+                <!-- ===============================Feed============                 -->
+                <div class="feeds">
+                    <!-- feed no:1 -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="images/Sayed.jpg" alt="Sajjadul Islam Profile Picture" >
+                                </div>
+                                <div class="info">
+                                    <h3>Abu Sayed</h3>
+                                    <small>2days ago</small>
+                                </div>
+                            </div>
+                            <span class="edit"><i class="uil uil-ellipsis-v"></i></span>
+                        </div>
+                        <!-- main image -->
+                        <div class="photo">
+                            <img src="images/Sayed._day.jpg" alt="Sajjadul Islam Image"  >
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-button">
+                                <span class="liked"><i class="uil uil-thumbs-up"></i></span>
+    
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="expand">
+                                <span><i class="uil uil-expand-arrows-alt"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/AkonProfile.jpg" alt=""></span>
+                            <span><img src="images/shojib.jpg" alt=""></span>
+                            <span><img src="images/profileimage.jpg" alt=""></span>
+                            <p>Liked by <b>Masum Muzammel</b> and <b>169 others</b> </p>
+                        </div>
+                        <div class="caption">
+                            <p>Lorem ipsum adipisicing elit. Facere, provident. <span
+                                    class="hash-tag">#lifestyle</span></p>
+                        </div>
+                        <div class="text-muted comments">view all 30 comments</div>
+                    </div>
+                    <!-- end feed no:1 -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="images/AkonProfile.jpg" alt="Sajjadul Islam Profile Picture" >
+                                </div>
+                                <div class="info">
+                                    <h3>Masum Muzammel Akon</h3>
+                                    <small>5hour ago</small>
+                                </div>
+                            </div>
+                            <span class="edit"><i class="uil uil-ellipsis-v"></i></span>
+                        </div>
+                        <!-- main image -->
+                        <div class="photo">
+                            <img src="images/Akon_day.jpg" alt="Sajjadul Islam Image"  >
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-button">
+                                <span class="liked"><i class="uil uil-thumbs-up"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="expand">
+                                <span><i class="uil uil-expand-arrows-alt"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/AkonProfile.jpg" alt=""></span>
+                            <span><img src="images/shojib.jpg" alt=""></span>
+                            <span><img src="images/sabbir.jpg" alt=""></span>
+                            <p>Liked by <b>Mahmodul Hasan</b> and <b>169 others</b> </p>
+                        </div>
+                        <div class="caption">
+                            <p>Lorem ipsum adipisicing elit. Facere, provident. <span
+                                    class="hash-tag">#lifestyle</span></p>
+                        </div>
+                        <div class="text-muted comments">view all 30 comments</div>
+                    </div>
+                    <!-- end feed no:1 -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="images/sajjadul_Islam.jpg" alt="Sajjadul Islam Profile Picture" >
+                                </div>
+                                <div class="info">
+                                    <h3>Sajjadul Islam</h3>
+                                    <small>1hour ago</small>
+                                </div>
+                            </div>
+                            <span class="edit"><i class="uil uil-ellipsis-v"></i></span>
+                        </div>
+                        <!-- main image -->
+                        <div class="photo">
+                            <img src="images/sajjdul_day.jpg" alt="Sajjadul Islam Image"  >
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-button">
+                                <span class="liked"><i class="uil uil-thumbs-up"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="expand">
+                                <span><i class="uil uil-expand-arrows-alt"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/AkonProfile.jpg" alt=""></span>
+                            <span><img src="images/shojib.jpg" alt=""></span>
+                            <span><img src="images/profileimage.jpg" alt=""></span>
+                            <p>Liked by <b>Mahmodul Hasan</b> and <b>169 others</b> </p>
+                        </div>
+                        <div class="caption">
+                            <p>Lorem ipsum adipisicing elit. Facere, provident. <span
+                                    class="hash-tag">#lifestyle</span></p>
+                        </div>
+                        <div class="text-muted comments">view all 30 comments</div>
+                    </div>
+                    
+                    <!-- end feed no:1 -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="images/sabbir.jpg" alt="Sabbir Profile Picture" >
+                                </div>
+                                <div class="info">
+                                    <h3>Sabbir Hossain</h3>
+                                    <small>58minute ago</small>
+                                </div>
+                            </div>
+                            <span class="edit"><i class="uil uil-ellipsis-v"></i></span>
+                        </div>
+                        <!-- main image -->
+                        <div class="photo">
+                            <img src="images/sabbir_day.jpg" alt="Sajjadul Islam Image"  >
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-button">
+                                <span class="liked"><i class="uil uil-thumbs-up"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="expand">
+                                <span><i class="uil uil-expand-arrows-alt"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/AkonProfile.jpg" alt=""></span>
+                            <span><img src="images/shojib.jpg" alt=""></span>
+                            <span><img src="images/profileimage.jpg" alt=""></span>
+                            <p>Liked by <b>Mahmodul Hasan</b> and <b>269 others</b> </p>
+                        </div>
+                        <div class="caption">
+                            <p>Lorem ipsum adipisicing elit. Facere, provident. <span
+                                    class="hash-tag">#lifestyle</span></p>
+                        </div>
+                        <div class="text-muted comments">view all 36 comments</div>
+                    </div>
+                    <!-- end feed no:1 -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="images/Sujon.jpg" alt="Sujon Profile Picture" >
+                                </div>
+                                <div class="info">
+                                    <h3>Ali Akbar Sujon</h3>
+                                    <small>1hour ago</small>
+                                </div>
+                            </div>
+                            <span class="edit"><i class="uil uil-ellipsis-v"></i></span>
+                        </div>
+                        <!-- main image -->
+                        <div class="photo">
+                            <img src="images/Sujon.jpg" alt="Sajjadul Islam Image"  >
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-button">
+                                <span class="liked"><i class="uil uil-thumbs-up"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="expand">
+                                <span><i class="uil uil-expand-arrows-alt"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/AkonProfile.jpg" alt=""></span>
+                            <span><img src="images/shojib.jpg" alt=""></span>
+                            <span><img src="images/profileimage.jpg" alt=""></span>
+                            <p>Liked by <b>Mahmodul Hasan</b> and <b>142 others</b> </p>
+                        </div>
+                        <div class="caption">
+                            <p>Lorem ipsum adipisicing elit. Facere, provident. <span
+                                    class="hash-tag">#lifestyle</span></p>
+                        </div>
+                        <div class="text-muted comments">view all 30 comments</div>
+                    </div>
+                    <!-- end feed no:1 -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img src="images/shojib.jpg" alt="Sajjadul Islam Profile Picture" >
+                                </div>
+                                <div class="info">
+                                    <h3>Ariful Haque</h3>
+                                    <small>12hour ago</small>
+                                </div>
+                            </div>
+                            <span class="edit"><i class="uil uil-ellipsis-v"></i></span>
+                        </div>
+                        <!-- main image -->
+                        <div class="photo">
+                            <img src="images/shojib_day.jpg" alt="Sajjadul Islam Image"  >
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-button">
+                                <span class="liked"><i class="uil uil-thumbs-up"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="expand">
+                                <span><i class="uil uil-expand-arrows-alt"></i></span>
+                            </div>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="images/AkonProfile.jpg" alt=""></span>
+                            <span><img src="images/shojib.jpg" alt=""></span>
+                            <span><img src="images/Sujon.jpg" alt=""></span>
+                            <p>Liked by <b>Ali Akbar Sujon</b> and <b>169 others</b> </p>
+                        </div>
+                        <div class="caption">
+                            <p>Lorem ipsum adipisicing elit. Facere, provident. <span
+                                    class="hash-tag">#lifestyle</span></p>
+                        </div>
+                        <div class="text-muted comments">view all 301 comments</div>
+                    </div>
+                    <!-- end feed no:1 -->
+                </div>
+            </div>
+            <!-- end of middle part------- -->
+
+
+            <!-- --------right part ------- -->
+            <div class="right">
+                <div class="messages">
+                    <div class="heading">
+                        <h4>Messages</h4>
+                        <div class="message-icons">
+                            <abbr title="edit"><i class="uil uil-edit"></i></abbr>
+                            <abbr title="video-call"><i class="uil uil-video"></i></abbr>
+                          <abbr title="setting">  <i class="uil uil-ellipsis-v"></i></abbr>
+                        </div>
+                    </div>
+                        <div class="search-box">
+                            <i class="uil uil-search-alt"></i>
+                            <input type="search" placeholder="Search messages" id="message-search">
+                        </div>
+                  <div class="category" >
+                    <h6 class="active">Primary</h6>
+                    <h6 >General</h6>
+                    <h6 class="messages-request">Request(7)</h6>
+                  </div>
+                  <div class="message" >
+                    <div class="profile-picture">
+                        <img src="images/Sazzad.jpg" alt="">
+                        <div class="active"></div>
+
+                    </div>
+                    <div class="message-body">
+                        <h5>Sazzad Hossain</h5>
+                        <p class="text-bold">Just now</p>
+                        
+
+                    </div>
+                  </div>
+                  <div class="message">
+                    <div class="profile-picture">
+                        <img src="images/sajjadul_Islam.jpg" alt="">
+                        <div class="active"></div>
+                    </div>
+                    <div class="message-body">
+                        <h5>Sajjadul Islam</h5>
+                        <p class="text-bold">2 new messages</p>
+                     
+
+                    </div>
+                  </div>
+                  <div class="message">
+                    <div class="profile-picture">
+                        <img src="images/sabbir.jpg" alt="">
+                        <div class="active"></div>
+                    </div>
+                    <div class="message-body">
+                        <h5>Sabbir Hossain</h5>
+                        <p class="text-bold">Active</p>
+                      
+
+                    </div>
+                  </div>
+                  <div class="message">
+                    <div class="profile-picture">
+                        <img src="images/Sayed.jpg" alt="">
+
+                    </div>
+                    <div class="message-body">
+                        <h5>Abu Sayed</h5>
+                        <p class="text-muted">Active 1 hour agp</p>
+                    </div>
+                  </div>
+                  <div class="message">
+                    <div class="profile-picture">
+                        <img src="images/AkonProfile.jpg" alt="">
+                        <div class="active"></div>
+                    </div>
+                    <div class="message-body">
+                        <h5>Masum Muzammel Akon</h5>
+                        <p class="text-bold">Active</p>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- end of messages -->
+                <!-- =========friend request========= -->
+                <div class="friend-request">
+                    <h4>Request</h4>
+                    <div class="request">
+                       <div class="info">
+                        <div class="profile-picture">
+                            <img src="images/Sujon.jpg" alt="">
+                       </div>
+                       <div>
+                        <h5>Ali Akbar Sujon</h5>
+                        <p class="text-muted">100 mutual friend</p>
+                    
+                       </div>
+                        </div>
+                       <div class="action">
+                        <button class="btn btn-primary bounce-top">
+                            Accept
+                        </button>
+                        <button class="btn">
+                            Reject
+                        </button>
+                       </div>
+                    </div>
+                </div>
+            </div>
+<!-- ==================end of right======== -->
+        </div>
+    </main>
+
+
+
+    <!-- ================THEME CUSTOMIZATION=================
+    -->
+    <div class="customize-theme">
+        <div class="card">
+            <h2>Customize your view</h2>
+            <p class="text-muted">Manage your font size,color,and background</p>
+       
+        <!-- font sizes -->
+        <div class="font-size">
+            <h4>Font Size</h4>
+            <div>
+                <h6>Aa</h6>
+            
+        <div class="choose-size">
+            <span class="font-size-1 active"></span>
+            <span class="font-size-2"></span>
+            <span class="font-size-3"></span>
+            <span class="font-size-4"></span>
+            <span class="font-size-5"></span>
+        </div>
+            <h3>Aa</h3>
+            </div>
+        </div>
+      
+    
+    
+        <!-- =============PRIMARY COLORS========== -->
+        <div class="color">
+            <h4>Color</h4>
+    <div class="choose-color">
+        <span class="color-1 active"></span>
+        <span class="color-2"></span>
+        <span class="color-3"></span>
+        <span class="color-4"></span>
+        <span class="color-5"></span>
+    </div>
+    </div>
+    <!-- ============BACKGROUND COLOR========== -->
+    <div class="background">
+        <h4>Backgrond</h4>
+        <div class="choose-bg">
+            <div class="bg-1 active">
+                <span></span>
+                <h5 for="bg-1">Light</h5>
+            </div>
+            <div class="bg-2">
+                <span></span>
+                <h5 for="bg-2">Dim</h5>
+            </div>
+            <div class="bg-3">
+                <span></span>
+                <h5 for="bg-3">No light</h5>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+  </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
