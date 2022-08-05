@@ -1060,16 +1060,15 @@ main .container .right {
 }
 
 @media screen and (max-width:630px) {
-    nav .search-box {
-        display: none;
+    nav {
+    box-shadow: 0 .4rem .5rem rgba(0, 0, 0, 0.09);  
     }
-
-    main .container {
-        grid-template-columns: 0 1fr 5rem;
-        margin: 0;
-        gap: 0;
+    
+    .create .btn{
+        position: absolute;
+        left: 40%;
+        transform: translate(-50%,-50%);
     }
-
     main .container .left {
         grid-column: 3/4;
         right: -60px;
@@ -1085,23 +1084,7 @@ main .container .right {
 
     }
 
-    .left .notification-popup {
-        position: absolute;
-        width: 20rem;
-        left: -20rem;
-    }
 
-
-    .left .notification-popup::before {
-        display: block;
-        position: absolute;
-        top: 1.3rem;
-        left: calc(20rem - 0.8rem);
-    }
-
-    main .container .left .sidebar>div h3 {
-        display: none;
-    }
 
     .middle {
         grid-column: auto/3;
@@ -1113,29 +1096,5 @@ main .container .right {
         max-width: 92vw;
     }
 
-    main .container .right {
-        display: none;
-    }
-
-    .customize-theme .card {
-        width: 90vw;
-        margin-left: 0;
-    }
-
-    .background .choose-bg {
-        gap: 0.6rem;
-
-    }
-
-    .choose-bg>div span {
-        width: 1.5rem;
-        height: 1.5em;
-        margin-right: .5rem;
-    }
-
-    .background .choose-bg>div {
-        font-size: .9rem;
-        padding: .7rem;
-        margin-top: .5rem;
-    }
+     
 }
