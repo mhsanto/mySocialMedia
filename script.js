@@ -11,12 +11,12 @@ let messageSearch = document.querySelector('#message-search');
 let theme = document.querySelector('#theme');
 let themeModal = document.querySelector('.customize-theme');
 // font size
-let fontSizes = document.querySelectorAll('.choose-size');
+let fontSizes = document.querySelectorAll('.choose-size span');
 
 var root = document.querySelector(':root');
 
 // // search chat
-// const searchMessage = () => {
+// const searchMessage = () => {>
 //     const val = messageSearch.value.toLowerCase();
 //     console.log(val);
 //     message.forEach(user => {
@@ -24,7 +24,7 @@ var root = document.querySelector(':root');
 //         if (name.indexOf(val) != -1) {
 //             user.style.display = 'flex';
 //         } else {
-//             user.style.display = 'none';
+//             user.style.display = 'none';ææææææææææææææææ
 //         }
 //     })
 // }
@@ -78,9 +78,19 @@ const closeThemeModal = (e) => {
 themeModal.addEventListener('click', closeThemeModal);
 
 //  changing fontSizes
+const removeSizeSelector = ()=>{
+    fontSizes.forEach(size =>{
+        size.classList.remove('active');
+    })
+}
+
 fontSizes.forEach(size => {
-    let fontSize;
-   size.addEventListener('click',()=>{
+    
+   
+    size.addEventListener('click',() =>{
+        removeSizeSelector();
+        let fontSize;
+       size.classList.toggle('active');
     if (size.classList.contains('font-size-1')) {
         fontSize = '10px';
         root.style.setProperty('----sticky-top-left', '5.4rem');
@@ -99,11 +109,13 @@ fontSizes.forEach(size => {
         root.style.setProperty('----sticky-top-right', '-25rem');
     } else if (size.classList.contains('font-size-5')) {
         fontSize = '22px';
-        root.style.setProperty('----sticky-top-left', '-10rem');
-        root.style.setProperty('----sticky-top-right', '-33rem');
+        root.style.setProperty('----sticky-top-left', '-12rem');
+        root.style.setProperty('----sticky-top-right', '-35rem');
     }
-    console.log(size);
     document.querySelector('html').style.fontSize = fontSize;
     
    })
 })
+
+
+// change Primary colors
