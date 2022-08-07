@@ -296,6 +296,7 @@ main .container .left .profile {
     -webkit-backdrop-filter: blur(3px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
+    z-index: 100;
 }
 
 .left .notification-popup::before {
@@ -337,6 +338,7 @@ main .container .left .profile {
     justify-content: space-between;
     height: 12rem;
     gap: .8rem;
+    z-index: 1;
 }
 
 .middle .stories .story {
@@ -346,7 +348,6 @@ main .container .left .profile {
     align-items: center;
     padding: var(--card-padding);
     border-radius: var(--card-radius);
-    /* background: red; */
     color: white;
     font-size: 0.8rem;
     width: 100%;
