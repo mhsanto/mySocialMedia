@@ -802,17 +802,14 @@ main .container .right {
 
 .bg-1 {
     background-color: #fff;
-    color: black;
 }
 
 .bg-2 {
     background-color: hsl(252, 30%, 17%);
-    color: white;
 }
 
 .bg-3 {
     background: black;
-    color: white;
 }
 
 .choose-bg>div span {
