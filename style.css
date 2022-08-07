@@ -11,16 +11,22 @@
     text-decoration: none;
     border: none;
 }
-
+h1,h2,h3,h4,h5,h6{
+    color: var(--color-dark);
+}
 :root {
-    --color-white: #FFFDFE;
-    --color-light: #F0EBEE;
+    --primary-color-hue:252;
+    --dark-color-lightness: 17%;
+    --light-color-lightness:95%;
+    --white-color-lightness:100%;
+    --color-white: hsl(252,30%,var(--white-color-lightness));
+    --color-light: hsl(252,30%,var(--light-color-lightness));
     --color-gray: #9D99AC;
-    --color-primary: #714ED7;
+    --color-primary: hsl(var(--primary-color-hue),75%,60%);
     --color-secondary: #D7D2EE;
     --color-success: #4DF95F;
     --color-danger: #F85358;
-    --color-dark: #222032;
+    --color-dark: hsl(252,30%,var(--dark-color-lightness));
     --color-black: #141119;
 
     --border-radius: 2rem;
@@ -105,16 +111,14 @@ img {
     font-size: .9rem;
 }
 
-.btn:hover {
-    opacity: 0.8;
-    background-color: var(--color-danger);
-}
 
 .btn-primary {
     background: var(--color-primary);
     color: white;
 }
-
+.btn-primary:hover{
+    background: blueviolet;
+}
 .text-bold {
     font-weight: 500;
 }
@@ -321,7 +325,7 @@ main .container .left .profile {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    /* border: 1px solid rgba(255, 255, 255, 0.18); */
     gap: .3rem;
     border-radius: var(--card-radius);
 }
@@ -429,7 +433,10 @@ main .container .left .profile {
     border-radius: var(--border-radius);
     padding: .5rem var(--card-padding);
 }
-
+.middle input{
+    border-radius: var(--border-radius);
+    margin-left: .4rem;
+}
 .middle .create_post input[type="text"] {
     justify-self: start;
     width: 100%;
@@ -675,13 +682,13 @@ main .container .right {
     background-color: var(--color-white);
     padding: 3rem;
     border-radius: var(--card-radius);
-    width: 50vw;
+    width: 40vw;
     box-shadow: 0 0 .5rem var(--color-black);
 
 }
 
 .customize-theme .font-size {
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 .customize-theme .font-size>div {
@@ -717,7 +724,7 @@ main .container .right {
 }
 
 /* --------------color---------- */
-.color {
+/* .color {
     margin-top: 1rem;
 }
 
@@ -760,13 +767,15 @@ main .container .right {
 .choose-color .active {
     border: 3px solid var(--color-primary);
     box-shadow: 0 0 .21rem var(--color-primary);
-}
+} */
 
 /* ===========background color */
-.background {
-    margin-top: 1rem;
+.background  {
+    margin-top: 2rem;
 }
-
+.background h4{
+    margin-bottom: 1rem;
+}
 .background .choose-bg {
     display: flex;
     justify-content: space-between;
@@ -813,11 +822,6 @@ main .container .right {
     border-radius: 50%;
     margin-right: 1rem;
 }
-
-
-
-
-
 
 
 /* ===========bounce animation start============= */

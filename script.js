@@ -15,6 +15,10 @@ let fontSizes = document.querySelectorAll('.choose-size span');
 
 var root = document.querySelector(':root');
 
+const Bg1 = document.querySelector('.bg-1');
+const Bg2 = document.querySelector('.bg-2');
+const Bg3 = document.querySelector('.bg-3');
+
 // // search chat
 // const searchMessage = () => {>
 //     const val = messageSearch.value.toLowerCase();
@@ -24,7 +28,7 @@ var root = document.querySelector(':root');
 //         if (name.indexOf(val) != -1) {
 //             user.style.display = 'flex';
 //         } else {
-//             user.style.display = 'none';ææææææææææææææææ
+//             user.style.display = 'none';
 //         }
 //     })
 // }
@@ -107,10 +111,6 @@ fontSizes.forEach(size => {
         fontSize = '19px';
         root.style.setProperty('----sticky-top-left', '-5rem');
         root.style.setProperty('----sticky-top-right', '-25rem');
-    } else if (size.classList.contains('font-size-5')) {
-        fontSize = '22px';
-        root.style.setProperty('----sticky-top-left', '-12rem');
-        root.style.setProperty('----sticky-top-right', '-35rem');
     }
     document.querySelector('html').style.fontSize = fontSize;
     
@@ -118,4 +118,44 @@ fontSizes.forEach(size => {
 })
 
 
-// change Primary colors
+// theme background values
+let lightColorLightness;
+let darkColorLightness;
+let whiteColorLightness;
+
+const changeBG =() =>{
+    root.style.setProperty('--light-color-lightness',lightColorLightness);
+    root.style.setProperty('--white-color-lightness',whiteColorLightness);
+    root.style.setProperty('--dark-color-lightness',darkColorLightness);
+}
+
+Bg1.addEventListener('click',() =>{
+    // add active class
+    Bg1.classList.add('active');
+    Bg2.classList.remove('active');
+    Bg3.classList.remove('active');
+    
+    window.location.reload();
+});
+Bg2.addEventListener('click',() =>{
+    darkColorLightness = '95%';
+    whiteColorLightness ='20%';
+    lightColorLightness ='15%';
+    
+    // add active class
+    Bg2.classList.add('active');
+    Bg1.classList.remove('active');
+    Bg3.classList.remove('active');
+    changeBG();
+});
+Bg3.addEventListener('click',() =>{
+    darkColorLightness = '95%';
+    whiteColorLightness ='10%';
+    lightColorLightness ='0%';
+    
+    // add active class
+    Bg3.classList.add('active');
+    Bg2.classList.remove('active');
+    Bg1.classList.remove('active');
+    changeBG();
+});
