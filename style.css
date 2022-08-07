@@ -155,7 +155,7 @@ nav .search-box {
     margin-left: 1rem;
     width: 30vw;
     font-size: 0.9rem;
-    color: black;
+    color: var(--color-gray);
     font-family: 'Poppins', sans-serif;
 
 }
