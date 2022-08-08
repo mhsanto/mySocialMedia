@@ -1086,6 +1086,8 @@ main .container .right {
         transition-delay: 0s;
 
     }
+    .left .notification-popup{
+    } 
 
     .middle {
         grid-column: auto/3;
