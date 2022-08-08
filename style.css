@@ -1105,8 +1105,8 @@ main .container .right {
     }
     .left .notification-popup {
         position: absolute;
-        width: 18rem;
-        left: -17rem;
+        width: 16rem;
+        left: -15rem;
     }
 
     .middle .stories {
