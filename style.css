@@ -1085,18 +1085,5 @@ main .container .right {
         transition-delay: 0s;
 
     }
-
-
-
-    .middle {
-        grid-column: auto/3;
-        padding: 0 1rem;
-    }
-
-    .middle .feeds .feed {
-        background-color: var(--color-white);
-        max-width: 92vw;
-    }
-
      
 }
