@@ -1065,7 +1065,6 @@ main .container .right {
     nav {
     box-shadow: 0 .4rem .5rem rgba(0, 0, 0, 0.09);  
     }
-    
     .create .btn{
         position: absolute;
         left: 40%;
@@ -1085,5 +1084,48 @@ main .container .right {
         transition-delay: 0s;
 
     }
+
+    .middle {
+        grid-column: auto/3;
+        padding: 0 .61rem;
+    }
+    .middle .create_post{
+        margin-top: .5rem;
+        font-size: .5rem;
+        padding: 0.3rem;  }
+    .container {
+        width: 96%;
+    }
+
+    main .container {
+        width: 100%;
+        grid-template-columns: 0 100% 0;
+        gap: 0;
+    }
+    .middle .stories {
+        height: 10rem;
+        width: 100%;
+        gap: .3rem;
+    }
+    .middle .stories .story {
+       
+        width: 100%;
+        font-size: .7rem;
+        text-align: center;
+    }
+    .middle .stories .story .profile-picture{
+        width:2rem;
+        height: 2rem;
+    }
+    .middle .feeds .feed {
+        margin: .9rem 0;
+        font-size: .7rem;
+        font-size: 1rem;
+        padding: 0 .4rem;
+    }
+    .feed .photo img{
+        height: 60vh;
+    }
+
      
 }
