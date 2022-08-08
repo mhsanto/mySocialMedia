@@ -347,13 +347,17 @@ main .container .left .profile {
     padding: var(--card-padding);
     border-radius: var(--card-radius);
     color: white;
-    font-size: 0.8rem;
     width: 100%;
+    height: 100%;
     position: relative;
     cursor: pointer;
     overflow: hidden;
 }
-
+.story .profile-picture{
+margin: 0 auto;
+width: 5rem;
+height: 5rem;
+}
 .middle .stories .story::before {
     content: "";
     position: absolute;
@@ -451,7 +455,6 @@ main .container .left .profile {
     margin: 1rem 0;
     padding: var(--card-padding);
     border-radius: var(--card-radius);
-    font-size: .7rem;
     line-height: 1.5rem;
 }
 
@@ -1064,6 +1067,7 @@ main .container .right {
     box-shadow: 0 .4rem .5rem rgba(0, 0, 0, 0.09);  
     }
     .create .btn{
+       padding: .6rem 1rem;
         position: absolute;
         left: 40%;
         transform: translate(-50%,-50%);
@@ -1082,8 +1086,6 @@ main .container .right {
         transition-delay: 0s;
 
     }
-
-
 
     .middle {
         grid-column: auto/3;
@@ -1106,32 +1108,48 @@ main .container .right {
         height: 10rem;
         width: 100%;
         gap: .3rem;
-    }
-    .middle .stories .story {
-       
-        width: 100%;
         font-size: .7rem;
         text-align: center;
     }
+    .middle .stories .story-5{
+        display:none;
+    }
+
     .middle .stories .story .profile-picture{
         width:2rem;
         height: 2rem;
     }
     .middle .feeds .feed {
-        margin: .9rem 0;
+        margin: 1rem 0;
         font-size: .7rem;
-        line-height: 1.5rem;
         font-size: 1rem;
-        padding: 0 .4rem;
+        padding: .4rem;
     }
     .feed .photo img{
         height: 60vh;
     }
-   .feed .photo .shojib{
-       width: 100%;
-     
+    .customize-theme .card {
+        width: 100vw;
+        margin-left: 0;
+        padding: 0.3rem 1rem;
     }
-    
+
+    .background .choose-bg {
+        gap: 0.6rem;
+
+    }
+
+    .choose-bg>div span {
+        width: 1.5rem;
+        height: 1.5em;
+        margin-right: .5rem;
+    }
+
+    .background .choose-bg>div {
+        font-size: .9rem;
+        /* padding: .7rem; */
+        margin-top: .5rem;
+    }
 
      
 }
