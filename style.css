@@ -1097,12 +1097,18 @@ main .container .right {
     .container {
         width: 96%;
     }
-
+   
     main .container {
         width: 100%;
         grid-template-columns: 0 100% 0;
         gap: 0;
     }
+    .left .notification-popup {
+        position: absolute;
+        width: 18rem;
+        left: -17rem;
+    }
+
     .middle .stories {
         height: 10rem;
         width: 100%;
