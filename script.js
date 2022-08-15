@@ -1,5 +1,14 @@
 // sidebar
 let menuItem = document.querySelectorAll(".menu-item");
+let notificationPopup = document.querySelector('.notification-popup');
+
+// preloader--------
+let loader = document.querySelector('.loader');
+function preloader() {
+    loader.style.display = 'none';
+}
+// preloader ends-------
+
 
 // ===========messages=========
 let messageNotification = document.querySelector('#messages-notification');
@@ -19,26 +28,11 @@ const Bg1 = document.querySelector('.bg-1');
 const Bg2 = document.querySelector('.bg-2');
 const Bg3 = document.querySelector('.bg-3');
 
-// // search chat
-// const searchMessage = () => {>
-//     const val = messageSearch.value.toLowerCase();
-//     console.log(val);
-//     message.forEach(user => {
-//         let name = user.getElementsByTagName('h5').textContent.toLowerCase();
-//         if (name.indexOf(val) != -1) {
-//             user.style.display = 'flex';
-//         } else {
-//             user.style.display = 'none';
-//         }
-//     })
-// }
-// // search messages
-// messageSearch.addEventListener('keyup', searchMessage);
 
-// remove active class in menu
 let changeActiveItem = () => {
     menuItem.forEach(item => {
-        item.classList.remove('active')
+        item.classList.remove('active');
+     
     })
 }
 // Notification will show when clicked
@@ -97,20 +91,20 @@ fontSizes.forEach(size => {
        size.classList.toggle('active');
     if (size.classList.contains('font-size-1')) {
         fontSize = '10px';
-        root.style.setProperty('----sticky-top-left', '5.4rem');
-        root.style.setProperty('----sticky-top-right', '5.4rem');
+        root.style.setProperty('--sticky-top-left', '5.4rem');
+        root.style.setProperty('--sticky-top-right', '5.4rem');
     } else if (size.classList.contains('font-size-2')) {
         fontSize = '13px';
-        root.style.setProperty('----sticky-top-left', '5.4rem');
-        root.style.setProperty('----sticky-top-right', '-7rem');
+        root.style.setProperty('--sticky-top-left', '5.4rem');
+        root.style.setProperty('--sticky-top-right', '-7rem');
     } else if (size.classList.contains('font-size-3')) {
         fontSize = '16px';
-        root.style.setProperty('----sticky-top-left', '-2rem');
-        root.style.setProperty('----sticky-top-right', '-17rem');
+        root.style.setProperty('--sticky-top-left', '-2rem');
+        root.style.setProperty('--sticky-top-right', '-17rem');
     } else if (size.classList.contains('font-size-4')) {
         fontSize = '19px';
-        root.style.setProperty('----sticky-top-left', '-5rem');
-        root.style.setProperty('----sticky-top-right', '-25rem');
+        root.style.setProperty('--sticky-top-left', '-5rem');
+        root.style.setProperty('--sticky-top-right', '-25rem');
     }
     document.querySelector('html').style.fontSize = fontSize;
     
@@ -139,7 +133,7 @@ Bg1.addEventListener('click',() =>{
 });
 Bg2.addEventListener('click',() =>{
     darkColorLightness = '95%';
-    whiteColorLightness ='20%';
+    whiteColorLightness ='0%';
     lightColorLightness ='15%';
     
     // add active class
@@ -159,3 +153,23 @@ Bg3.addEventListener('click',() =>{
     Bg1.classList.remove('active');
     changeBG();
 });
+
+
+
+// // search chat
+// const searchMessage = () => {>
+//     const val = messageSearch.value.toLowerCase();
+//     console.log(val);
+//     message.forEach(user => {
+//         let name = user.getElementsByTagName('h5').textContent.toLowerCase();
+//         if (name.indexOf(val) != -1) {
+//             user.style.display = 'flex';
+//         } else {
+//             user.style.display = 'none';
+//         }
+//     })
+// }
+// // search messages
+// messageSearch.addEventListener('keyup', searchMessage);
+
+// remove active class in menu
