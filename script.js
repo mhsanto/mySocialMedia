@@ -4,9 +4,9 @@ let notificationPopup = document.querySelector('.notification-popup');
 
 // preloader--------
 let loader = document.querySelector('.loader');
-function preloader() {
+setTimeout(() => {
     loader.style.display = 'none';
-}
+}, 3000);
 // preloader ends-------
 
 
