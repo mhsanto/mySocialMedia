@@ -2,12 +2,6 @@
 let menuItem = document.querySelectorAll(".menu-item");
 let notificationPopup = document.querySelector('.notification-popup');
 
-// preloader--------
-let loader = document.querySelector('.loader');
-setTimeout(() => {
-    loader.style.display = 'none';
-}, 3000);
-// preloader ends-------
 
 
 // ===========messages=========
