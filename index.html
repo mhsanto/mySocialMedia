@@ -16,6 +16,9 @@
     <!-- stylesheet -->
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
+
     <title>Social Media Demo</title>
 </head>
 
@@ -606,7 +609,7 @@
         ScrollReveal().clean(el);
     }
         });
-        ScrollReveal().reveal('.feed', { delay: 300, origin: 'left' }); ScrollReveal().reveal('.story', { origin: 'left', interval: 200,afterReveal:false });
+        ScrollReveal().reveal('.feed', { delay: 200, origin: 'left' }); ScrollReveal().reveal('.story', { origin: 'left', interval: 200,afterReveal:false });
         ScrollReveal().reveal('.menu-item', { origin: 'left', interval: 200, afterReveal: function(el) {
         ScrollReveal().clean(el);
     } });

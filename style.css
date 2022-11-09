@@ -42,6 +42,7 @@ h1,h2,h3,h4,h5,h6{
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 50px;
 }
 
 body {
@@ -456,6 +457,8 @@ height: 5rem;
     padding: var(--card-padding);
     border-radius: var(--card-radius);
     line-height: 1.5rem;
+    position: relative;
+    z-index: -1;
 }
 
 .middle .feeds .feed .head {
